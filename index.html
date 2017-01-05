@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Basic File</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+	<div class="jumbotron">
+  		<h1>FOREX</h1>
+  			<p>USD</p>
+	  			<div class="input-group input-group-lg" id="USDInput">
+	  				<span class="input-group-addon" id="sizing-addon1">$</span>
+	  				<input type="text" class="form-control" placeholder="100" aria-describedby="sizing-addon1">
+				</div>
+
+				<div class="input-group-lg" id="foreignInput">
+      				<input type="text" class="form-control" aria-label="...">
+      					<div class="input-group-btn">
+        					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
+        						<ul class="dropdown-menu dropdown-menu-right">
+						          <li><a href="#">Action</a></li>
+						          <li><a href="#">Another action</a></li>
+						          <li><a href="#">Something else here</a></li>
+						          <li role="separator" class="divider"></li>
+						          <li><a href="#">Separated link</a></li>
+        						</ul>
+      					</div><!-- /btn-group -->
+    			</div><!-- /input-group -->
+  			<p><a class="btn btn-primary btn-lg" href="#" role="button">Calculate</a></p>
+	</div>
+	<div>
+		<ul class="list-group" id="USDList">
+		  <li class="list-group-item list-group-item-success">1 USD</li>
+		  <li class="list-group-item list-group-item-info">		
+		  	1 USD             
+		  </li>
+		  <li class="list-group-item list-group-item-warning">1 USD</li>
+		  <li class="list-group-item list-group-item-danger">1 USD</li>
+		</ul>
+
+		<p id="middleEquals"> = </p>
+		
+		<ul class="list-group" id="foreignList">
+		  <a href="#" class="list-group-item list-group-item-success">EUR</a>
+		  <a href="#" class="list-group-item list-group-item-info">GBP</a>
+		  <a href="#" class="list-group-item list-group-item-warning">JPY</a>
+		  <a href="#" class="list-group-item list-group-item-danger">CAD</a>
+		</ul>
+	</div>
+
+	<script src="text/forex.js">
+
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</body>
+</html>
