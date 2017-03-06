@@ -5,53 +5,71 @@
 	<title>Basic File</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://code.jquery.com/jquery.js"></script>
 
 </head>
 <body>
 	<div class="jumbotron">
   		<h1>FOREX</h1>
   			<p>USD</p>
+	  			
 	  			<div class="input-group input-group-lg" id="USDInput">
-	  				<span class="input-group-addon" id="sizing-addon1">$</span>
-	  				<input type="text" class="form-control" placeholder="100" aria-describedby="sizing-addon1">
+	  				<!--<span class="input-group-addon" id="sizing-addon1">$</span>-->
+	  				<input type="text" class="form-control" placeholder="100 USD" aria-describedby="sizing-addon1"></input>
 				</div>
 
 				<div class="input-group-lg" id="foreignInput">
-      				<input type="text" class="form-control" aria-label="...">
-      					<div class="input-group-btn">
-        					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
-        						<ul class="dropdown-menu dropdown-menu-right">
-						          <li><a href="#">Action</a></li>
-						          <li><a href="#">Another action</a></li>
-						          <li><a href="#">Something else here</a></li>
-						          <li role="separator" class="divider"></li>
-						          <li><a href="#">Separated link</a></li>
-        						</ul>
-      					</div><!-- /btn-group -->
+      				<input type="text" class="form-control" aria-label="..." placeholder="Foreign Currency">
+      				<input type="radio" name="gbpcheck" value="1"> GBP
+      				<input type="radio" name="cadcheck" value="2"> CAD
+      				<input type="radio" name="audcheck" value="3"> AUD
+      					
     			</div><!-- /input-group -->
+    			<div>
+    				
+    			</div>
   			<p><a class="btn btn-primary btn-lg" href="#" role="button">Calculate</a></p>
-	</div>
-	<div>
-		<ul class="list-group" id="USDList">
-		  <li class="list-group-item list-group-item-success">1 USD</li>
-		  <li class="list-group-item list-group-item-info">		
-		  	1 USD             
-		  </li>
-		  <li class="list-group-item list-group-item-warning">1 USD</li>
-		  <li class="list-group-item list-group-item-danger">1 USD</li>
-		</ul>
 
-		<p id="middleEquals"> = </p>
-		
-		<ul class="list-group" id="foreignList">
-		  <a href="#" class="list-group-item list-group-item-success">EUR</a>
-		  <a href="#" class="list-group-item list-group-item-info">GBP</a>
-		  <a href="#" class="list-group-item list-group-item-warning">JPY</a>
-		  <a href="#" class="list-group-item list-group-item-danger">CAD</a>
-		</ul>
+  			<!--end of JUMBOTRON-->
 	</div>
+	<!--TABLE-->
+	<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading">USD TO FOREIGN UNIT</div>
 
-	<script src="text/forex.js">
+  <!-- Table -->
+  <table class="table">
+    <tr>
+    	<th>CURRENCY 1</th>
+    	<th>CURRENCY 2</th> 
+  	</tr>
+  	<tr>
+  		<th>1 USD</th>
+    	<th class="gbpNow"></th>
+  	</tr>
+  	<tr>
+  		<th>1 USD</th>
+    	<th class="audNow"></th> 
+  	</tr>
+  	<tr>
+  		<th>1 USD</th>
+    	<th class="cadNow"></th> 
+  	</tr>
+  	<tr>
+  		<th>1 USD</th>
+    	<th class="mxnNow"></th> 
+  	</tr>
+  	<tr>
+  		<th>1 USD</th>
+    	<th class="plnNow"></th> 
+  	</tr>
+  </table>
+
+ <!--END OF TABLE-->
+</div>
+
+
+	<script src="forex.js">
 
 	</script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

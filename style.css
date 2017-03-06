@@ -8,15 +8,17 @@ body {
 
 #USDInput {
 	width: 33%;
-	float: left;
+	float:left;
 	display: inline;
+	padding-left: 30px;
 	
 }
 
 #foreignInput {
 	width: 33%;
-	float: right;
+	float:right;
 	display: inline;
+	padding-right: 30px;
 }
 
 .list-group {
@@ -44,4 +46,9 @@ body {
 	padding-top: 100px;
 	font-size: 3em;
 
+}
+
+.gbpNow{
+	
+	margin-left: 30px;
 }
